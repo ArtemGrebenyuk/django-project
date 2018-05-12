@@ -1,5 +1,5 @@
 from django.shortcuts import render, render_to_response
-from django.shortcuts imp
+
 from rest_framework.viewsets import ModelViewSet
 
 # Create your views here.
@@ -12,4 +12,4 @@ class SupplierViewSet(ModelViewSet):
     serializer_class = SupplierSerializers
 
 
-def list()
+
