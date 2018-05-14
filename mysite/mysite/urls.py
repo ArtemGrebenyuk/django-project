@@ -19,7 +19,10 @@ from django.urls import path
 from django.contrib import admin
 from django.urls import include, path
 
+from stock.views import SupplierViewSet
+
 urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
+    path('stock', SupplierViewSet.as_view({'get': 'list'})),
 ]
